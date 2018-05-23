@@ -14,13 +14,13 @@ $(document).ready(function() {
        $.getJSON(url, function(json){
            console.log(json);
            for (let i = 0; i < json[1].length; i++) {    
-                $("#content").append("<div id="+ i +" class='items'><p>" + json[1][i] + "</p></div>");
+                $("#content").append("<a id='l" + i +"' href=''><div id='c"+ i +"' class='items'><p>" + json[1][i] + "</p></div></a>");
             }
             for (let i = 0; i < json[2].length; i++) {
-                $(`#${i}`).append("<p>" + json[2][i] + "</p>");
+                $(`#c${i}`).append("<p>" + json[2][i] + "</p>");
             } 
             for (let i = 0; i < json[3].length; i++) {
-                $(`#${i}`).attr("src", json[3][i]);
+                $(`#l${i}`).attr("href", json[3][i]);
             } 
        });
    });  
