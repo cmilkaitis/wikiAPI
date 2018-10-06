@@ -1,0 +1,141 @@
+body{
+    font-family: Inconsolata, sans-serif;
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-bottom-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+#content{
+    margin: 0 auto;
+}
+
+.fa-search{
+    color: #fff;
+}
+
+.btn-orange{
+    background: #f37826;
+    border-color: #f37826;
+    color: #fff;
+}
+
+.title{
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+.fcc-logo{
+    height: 30px;
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.github-logo{
+    width: 80px;
+    height: auto;
+    filter: invert(100%);
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+.github-logo:hover{
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.font-style{
+    font-family: Inconsolata, monospace;
+}
+
+footer{
+    margin: 0 auto;
+}
+
+#random {
+    border-radius: 4px;
+    border-bottom: 4px solid #ad5400;
+    min-width: 300px;
+    width: 25%;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#random:hover{
+    opacity: 0.9;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#btn{
+    border: none;
+    background: transparent;
+    margin-left: -40px;
+}
+
+.result-title {
+    margin: 30px !important;
+}
+
+[type="search"] {
+    outline-offset: -2px;
+    -webkit-appearance: none;
+    width: 25%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    min-width: 500px;
+    margin-bottom: 20px;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+[type="search"]::placeholder {
+    color: #fff;
+    opacity: 0.85;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+[type="search"]:after {
+    content: '&#x1F50D';
+}
+
+.result-title,
+.results-title{
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.result-content{
+    font-size: 14px;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.items {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border-bottom: 4px solid #ddd;
+    color: #333;
+    text-decoration: none !important;
+    width: 750px;
+}

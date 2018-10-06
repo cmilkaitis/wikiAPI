@@ -12,10 +12,10 @@ $(document).ready(function() {
        let url = wikiUrl + term;
  
        $.getJSON(url, function(json){
-           $("#content").html("<h2 class='text-center' style='margin-top: 10px; font-family: Lobster, cursive;'>Results for your search of '" + json[0] + "'");
+           $("#content").html("<h2 class='text-center font-style result-title' style='margin-top: 10px;'>Search Results for: '" + json[0] + "'");
            for (let i = 0; i < json[1].length; i++) {    
-                $("#content").append("<a id='l" + i +"' href=''><div id='c"+ i +"' class='items' style='background: white; border-radius: 5px; margin-top: 5px; margin-bottom: 5px; padding: 10px 10px;'><p style='font-family: Lobster, cursive;'>" + json[1][i] + "</p></div></a>");
-                $(`#c${i}`).append("<p>" + json[2][i] + "</p>");
+                $("#content").append("<a id='l" + i +"' href=''><div id='c"+ i +"' class='results items font-style'><p class='font-style results-title'>" + json[1][i] + "</p></div></a>");
+                $(`#c${i}`).append("<p class='results-content'>" + json[2][i] + "</p>");
                 $(`#l${i}`).attr("href", json[3][i]);  
             }
         });

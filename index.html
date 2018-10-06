@@ -4,24 +4,35 @@
         <meta charset="utf-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+        <link href='http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet' type='text/css'>
+
         <title>Wikipedia Viewer</title>
     </header>
 
     <body>
         <div class="container main">
-                <h1 class='text-center' style='margin-top: 20px; font-family: Lobster, cursive; padding-bottom: 10px;'>freeCodeCamp Wiki API</h1>
-            <br>
-            <div id="random-button">
-                <button type="button" id="random" class="btn btn-primary btn-lg btn-block">Go to a random wiki page</button>
+            <div class="row">
+                <div class="col-md-12 mb-3 text-center">
+                    <h1 class='text-center title'><img class="fcc-logo" src="img/fcc-logo-white.png" alt="freeCodeCamp Logo"><br/>Wiki API</h1>
+                </div>
+            <div class="col-md-12 mb-3 text-center" id="search-input">
+                <input type="search" id="search-text" name="q" placeholder="Search Wiki" value="" autocomplete="off">
+                <button type="button" class="" id="btn"><div class="fa fa-search"></div></button>
             </div>
             <br>
-            <div id="search-input">
-                <input type="search" id="search-text" name="q" placeholder="Search Wiki" value="">
-                <button type="button" class="btn btn-primary" id="btn">Search</button>
+            <div class="col-md-12 mb-3 text-center" id="random-button">
+                <button type="button" id="random" class="btn btn-orange btn-lg">Go to a random wiki page</button>
             </div>
+
             <div id="content"></div>
         </div>
+        </div>
+        <footer class="text-center">
+            <a href="https://github.com/cmilkaitis/wikiAPI" target="_blank"><img class="github-logo" src="img/github-logo-white.png" alt="GitHub Logo"></a>
+        </footer>
+
         <script src="app.js"></script>
     </body>
 </html>
